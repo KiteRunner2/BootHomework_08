@@ -1,0 +1,248 @@
+/* a {
+    background-color: yellow;
+}
+a:link, */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 25px;
+    font-family:'Open Sans',courier,arial,helvetica;
+}
+a {
+    display: inline block;
+    padding: 5px;
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+}
+a:hover {
+    color:#aaa69d;
+    /* background-color: black; */
+    border-radius: 20px;
+    color:#aaa69d;
+}
+a.name {
+    color:black;
+    font-weight: bolder;
+}
+
+a.name:hover {
+    color:#aaa69d;
+    font-weight: bolder;
+}
+
+a.contact {
+    background-color: #218c74;
+    color: white;
+    float: right;
+    font-size: 80%;
+    padding: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin:5px;
+}
+.headerMiddle {
+    position: relative;
+    left: 25%;
+    transform: translateX(-25%);
+    font-size: 80%;
+}
+
+body {
+    /* background-image: url('./bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color:#F9F4F5;
+    /* width: 100vw; */
+    /* width:80%; */
+    margin: auto;
+
+}
+
+p.projectText,
+ul.projectText {
+    text-align: left;
+    font-size: 80%;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 0px;
+    /* row-gap: 10px; */
+    grid-template-areas:
+     "header header header header"
+     "s1 s1 s1 s1"
+     "s2 s2 s2 s2"
+     "side-l side-l side-r side-r"
+     "footer footer footer footer";
+}
+
+
+
+.header {
+    border-bottom: 1px solid #218c74;
+    color: black;
+    /* border-color: green;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: dashed; */
+    background-color: #F9F4F5;
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    text-align: left;
+    grid-area: header;
+    
+    /* height: 60px; */
+    padding:20px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.footer {
+    /* border-color:blue; */
+      /* border-radius: 5px;
+      border-width: 1px;
+      border-style: dashed; */
+      /* grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5; */
+      grid-area: footer;
+      text-align: center;
+      padding: 10px;
+      margin: 0px;
+      background-color: #2c2c54;
+  }
+
+  .section1 {
+      grid-area: s1;
+      
+      text-align: center;
+      padding: 10px;
+      padding-top: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .section2 {
+    grid-area: s2;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom:0px;
+    background-color: #218c74;
+}
+
+.section2inside {
+    background-color: #F9F4F5;
+    width:50%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+  .side-left {
+    /* border-color:black;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: dashed; */
+      /* grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4; */
+      grid-area: side-l;
+      text-align: left;
+      padding: 10px;
+      padding-top: 5px;
+      margin: 0px;
+  }
+
+  .side-right {
+    /* border-color:rgb(55, 0, 255);
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: dashed; */
+      /* grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4; */
+      grid-area: side-r;
+      text-align: left;
+      padding: 10px;
+      padding-top: 5px;
+      margin:0px;
+  }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    overflow: hidden;
+  }
+
+  /* .sticky + .content {
+    padding-top: 60px;
+  } */
+
+  /* THIS IS FOR PORTFOLIO PAGE */
+
+  .grid-container-portfolio {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 50px;
+    /* row-gap: 10px; */
+    grid-template-areas:
+     "header header header header"
+     "project1 project1 text1 text1"
+     "text2 text2 project2 project2"
+     "project3 project3 text3 text3"
+     "footer footer footer footer";
+     text-align: center;
+}
+
+.project1 {
+    grid-area: project1;
+    padding:20px;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.text1 {
+    grid-area: text1;
+    /* margin-bottom: 50px; */
+}
+
+.project2 {
+    grid-area: project2;
+    padding:20px;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.project3 {
+    grid-area: project3;
+    padding:20px;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.responsiveImg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
