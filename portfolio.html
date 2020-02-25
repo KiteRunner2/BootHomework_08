@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <div id="alertMessage"></div>
       <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -82,7 +83,7 @@
                     </div>
       
                     <div class="text-center">
-                      <button type="submit" onclick="$('#contactModal').modal('hide')" class="btn btn-info btn-md btn-teal darken-1">Submit</button>
+                      <button type="submit" onclick="submit();$('#contactModal').modal('hide')" class="btn btn-info btn-md btn-teal darken-1">Submit</button>
                     </div>
       
                   </div>
@@ -405,7 +406,28 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        function submit(){
+          let name = document.getElementById('name').value;
+          let email = document.getElementById('email').value;
+          let subject = document.getElementById('subject').value;
+          let message = document.getElementById('message').value;
+          let contact = {
+            name:name,
+            email:email,
+            subject:subject,
+            message:message
+          }
+          console.log(contact);
+          $('#alertMessage').html(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+      Thank you! Your messsage has been sent!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+    </div>`);
+        };
+      
+      
+      </script>
 
 </body>
 
