@@ -1,4 +1,4 @@
-# BootHomework_08 Updated portfolio page
+# Updated portfolio page
 
 ```
 New refreshed portfolio page that consists of:
