@@ -22,11 +22,12 @@
 <body>
   <div id="alertMessage"></div>
   <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
 
-      <!-- <div class="container my-5"> -->
+        <!-- <div class="container my-5"> -->
 
         <!-- <style>
         .border-top {
@@ -35,71 +36,72 @@
             border-top-right-radius: .25rem!important;
         }
       </style> -->
-      
-    
-      <!--Section: Content-->
-      <section class="text-center dark-grey-text mb-5">
-        <div style="padding:1rem;">
-        <!-- <div class="card"> -->
-          <!-- <div class="card-body"> -->
-            
+
+
+        <!--Section: Content-->
+        <section class="text-center dark-grey-text mb-5">
+          <div style="padding:1rem;">
+            <!-- <div class="card"> -->
+            <!-- <div class="card-body"> -->
+
             <!-- Section heading -->
             <h3 class="font-weight-bold my-4">Contact me</h3>
             <!-- Section description -->
-            
-    
+
+
             <!-- <form class="mb-4 mx-md-5" action="" onsubmit=""> -->
-    
-              <div class="row">
-                <div class="col-md-6 mb-4">
-    
-                  <!-- Name -->
-                  <input type="text" id="name" class="form-control" placeholder="Name">
-    
-                </div>
-                <div class="col-md-6 mb-4">
-    
-                  <!-- Email -->
-                  <input type="email" id="email" class="form-control" placeholder="Email">
-    
-                </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4">
+
+                <!-- Name -->
+                <input type="text" id="name" class="form-control" placeholder="Name">
+
               </div>
-    
-              <div class="row">
-                <div class="col-md-12 mb-4">
-    
-                  <!-- Subject -->
-                  <input type="text" id="subject" class="form-control" placeholder="Subject">
-    
-                </div>
+              <div class="col-md-6 mb-4">
+
+                <!-- Email -->
+                <input type="email" id="email" class="form-control" placeholder="Email">
+
               </div>
-    
-              <div class="row">
-                <div class="col-md-12">
-    
-                  <div class="form-group mb-4">
-                    <textarea class="form-control rounded" id="message" rows="3" placeholder="How can I help?"></textarea>
-                  </div>
-    
-                  <div class="text-center">
-                    <button type="submit" onclick="submit();$('#contactModal').modal('hide')" class="btn btn-info btn-md btn-teal darken-1">Submit</button>
-                  </div>
-    
-                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-4">
+
+                <!-- Subject -->
+                <input type="text" id="subject" class="form-control" placeholder="Subject">
+
               </div>
-    
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group mb-4">
+                  <textarea class="form-control rounded" id="message" rows="3" placeholder="How can I help?"></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" onclick="submit();$('#contactModal').modal('hide')"
+                    class="btn btn-info btn-md btn-teal darken-1">Submit</button>
+                </div>
+
+              </div>
+            </div>
+
             <!-- </form> -->
-            
-          <!-- </div> -->
+
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </section>
+        <!-- Section: Content -->
+
         <!-- </div> -->
-      </div>
-      </section>
-      <!-- Section: Content -->
-    
-    <!-- </div> -->
 
 
-      <!-- <div class="modal-header">
+        <!-- <div class="modal-header">
         <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -112,10 +114,10 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div> -->
+      </div>
     </div>
   </div>
-</div>
-<!-- Modal -->
+  <!-- Modal -->
   <!--Main Navigation-->
   <header>
 
@@ -154,7 +156,7 @@
               <a class="nav-link" href="https://www.linkedin.com/in/rudzki/" target="blank">LinkedIn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" target="">Resume</a>
+              <!-- <a class="nav-link" href="#" target="">Resume</a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
@@ -251,7 +253,7 @@
                   availability for up to 50% travel), or on-site in Brampton, Toronto, Markham, Mississauga.</p>
 
                 <p class="card-text"> I'm also open to full-time roles at the senior/leadership level.</p>
-                <p class="card-text">Last update: February 23rd, 2020</p>
+                <p class="card-text">Last update: March 27, 2020</p>
                 <a href="portfolio.html" class="btn btn-teal darken-1">Learn more</a>
 
               </div>
@@ -326,26 +328,49 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript">
-    function submit(){
+    function submit() {
       let name = document.getElementById('name').value;
       let email = document.getElementById('email').value;
       let subject = document.getElementById('subject').value;
       let message = document.getElementById('message').value;
-      let contact = {
-        name:name,
-        email:email,
-        subject:subject,
-        message:message
+      let postData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
       }
-      console.log(contact);
-      $('#alertMessage').html(`<div class="alert alert-success alert-dismissible fade show" role="alert">
-  Thank you! Your messsage has been sent!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      // console.log(postData);
+      $.post('/wyslijmail.php', postData).then(response => {
+        $('#name').val('');
+        $('#email').val('');
+        $('#subject').val('');
+        $('#message').val('');
+        if (response == 'ok') {
+          $('#alertMessage').html(`<div id="x1" class="alert alert-success alert-dismissible fade show" role="alert">
+Thank you! Your messsage has been sent!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
 </div>`);
+          setTimeout(function () {
+            $('#x1').fadeOut(1000);
+          }, 2500);
+          return true;
+        }
+        else {
+          $('#alertMessage').html(`<div id="x1" class="alert alert-danger alert-dismissible fade show" role="alert">
+            There was a problem sending your message. Please try again later.<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+</div>`);
+          setTimeout(function () {
+            $('#x1').fadeOut(1000);
+          }, 2500);
+          return true;
+        }
+      });
     };
-  
-  
+
+
   </script>
 
 </body>

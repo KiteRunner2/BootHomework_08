@@ -2,104 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Przemek Rudzki</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <!-- Your custom styles (optional) -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Przemek Rudzki</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
-    <div id="alertMessage"></div>
-      <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div id="alertMessage"></div>
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-  
+
         <!-- <div class="container my-5"> -->
-  
-          <!-- <style>
+
+        <!-- <style>
           .border-top {
             border-top: 5px solid #218c74 !important;
             border-top-left-radius: .25rem!important;
               border-top-right-radius: .25rem!important;
           }
         </style> -->
-        
-      
+
+
         <!--Section: Content-->
         <section class="text-center dark-grey-text mb-5">
           <div style="padding:1rem;">
-          <!-- <div class="card"> -->
+            <!-- <div class="card"> -->
             <!-- <div class="card-body"> -->
-              
-              <!-- Section heading -->
-              <h3 class="font-weight-bold my-4">Contact me</h3>
-              <!-- Section description -->
-              
-      
-              <!-- <form class="mb-4 mx-md-5" action="" onsubmit=""> -->
-      
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-      
-                    <!-- Name -->
-                    <input type="text" id="name" class="form-control" placeholder="Name">
-      
-                  </div>
-                  <div class="col-md-6 mb-4">
-      
-                    <!-- Email -->
-                    <input type="email" id="email" class="form-control" placeholder="Email">
-      
-                  </div>
+
+            <!-- Section heading -->
+            <h3 class="font-weight-bold my-4">Contact me</h3>
+            <!-- Section description -->
+
+
+            <!-- <form class="mb-4 mx-md-5" action="" onsubmit=""> -->
+
+            <div class="row">
+              <div class="col-md-6 mb-4">
+
+                <!-- Name -->
+                <input type="text" id="name" class="form-control" placeholder="Name">
+
+              </div>
+              <div class="col-md-6 mb-4">
+
+                <!-- Email -->
+                <input type="email" id="email" class="form-control" placeholder="Email">
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-4">
+
+                <!-- Subject -->
+                <input type="text" id="subject" class="form-control" placeholder="Subject">
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="form-group mb-4">
+                  <textarea class="form-control rounded" id="message" rows="3" placeholder="How can I help?"></textarea>
                 </div>
-      
-                <div class="row">
-                  <div class="col-md-12 mb-4">
-      
-                    <!-- Subject -->
-                    <input type="text" id="subject" class="form-control" placeholder="Subject">
-      
-                  </div>
+
+                <div class="text-center">
+                  <button type="submit" onclick="submit();$('#contactModal').modal('hide')"
+                    class="btn btn-info btn-md btn-teal darken-1">Submit</button>
                 </div>
-      
-                <div class="row">
-                  <div class="col-md-12">
-      
-                    <div class="form-group mb-4">
-                      <textarea class="form-control rounded" id="message" rows="3" placeholder="How can I help?"></textarea>
-                    </div>
-      
-                    <div class="text-center">
-                      <button type="submit" onclick="submit();$('#contactModal').modal('hide')" class="btn btn-info btn-md btn-teal darken-1">Submit</button>
-                    </div>
-      
-                  </div>
-                </div>
-      
-              <!-- </form> -->
-              
+
+              </div>
+            </div>
+
+            <!-- </form> -->
+
             <!-- </div> -->
-          <!-- </div> -->
-        </div>
+            <!-- </div> -->
+          </div>
         </section>
         <!-- Section: Content -->
-      
-      <!-- </div> -->
-  
-  
+
+        <!-- </div> -->
+
+
         <!-- <div class="modal-header">
           <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -118,316 +120,393 @@
   </div>
   <!-- Modal -->
 
-    <!--Main Navigation-->
-    <!--Main Navigation-->
-    <header>
+  <!--Main Navigation-->
+  <!--Main Navigation-->
+  <header>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark teal darken-1">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark teal darken-1">
 
-            <!-- Additional container -->
-            <div class="container">
+      <!-- Additional container -->
+      <div class="container">
 
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="index.html">Przemek Rudzki</a>
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">Przemek Rudzki</a>
 
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!-- Collapsible content -->
-                <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/KiteRunner2" target="blank">GitHub</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/rudzki/" target="blank">LinkedIn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
-                          </li>
-                    </ul>
-                    <!-- Links -->
-                    <form class="form-inline">
-                        <div class="md-form my-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-                    </form>
-                </div>
-                <!-- Collapsible content -->
-
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/KiteRunner2" target="blank">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/rudzki/" target="blank">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#" target="">Resume</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- Links -->
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             </div>
-            <!-- Additional container -->
+          </form>
+        </div>
+        <!-- Collapsible content -->
 
-        </nav>
-        <!--/.Navbar-->
+      </div>
+      <!-- Additional container -->
 
-    </header>
-    <!--Main Navigation-->
+    </nav>
+    <!--/.Navbar-->
 
-    <!--Main layout-->
-    <main class="mt-5">
+  </header>
+  <!--Main Navigation-->
 
-        <!--Main container-->
-        <div class="container">
+  <!--Main layout-->
+  <main class="mt-5">
 
-            <!--Grid row-->
-            <div class="row">
+    <!--Main container-->
+    <div class="container">
 
-                <!--Grid column-->
-                
-                <!--Grid column-->
+      <!--Grid row-->
+      <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-5 mb-4">
+        <!--Grid column-->
 
-                    <h3>Password generator - JavaScript</h2>
-                        <hr>
-                        <p>User can select password that can contain eiter: lower case, upper case, digits or special
-                            characters.
-                            User can choose password length between 8-128 characters. Initial setting is 12 characters.
-                        </p>
-                        <p>How code works:<br>
+        <!--Grid column-->
 
-                            Based on user selection, "working string" is created that is used to pick up random
-                            characters from.
-                            I am using function in the loop (based on password length) to pick up random characters from
-                            "working string".
-                            After password is generated I am doing addtitional check if password contains characters
-                            required by user. If
-                            it does not contain required characters then password generation is invoked again.
-                            User has an option to copy password string to computer/mobile clipboard.</p>
-                        <a href="https://github.com/KiteRunner2/JavaScript---password-generator" target="blank"
-                            class="btn btn-teal darken-1">GitHub</a>
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
 
-                </div>
-                <!--Grid column-->
-                <div class="col-md-7 mb-4">
+          <h3>Password generator - JavaScript</h2>
+            <hr>
+            <p>User can select password that can contain eiter: lower case, upper case, digits or special
+              characters.
+              User can choose password length between 8-128 characters. Initial setting is 12 characters.
+            </p>
+            <p>How code works:<br>
 
-                    <div class="view overlay z-depth-1-half">
-                        <img src="./assets/img/pass_gen.png" class="card-img-top" alt="">
-                        <div class="mask rgba-white-light"></div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- grid row -->
-            <div class="row">
-                <!-- grid column -->
-                
-                <div class="col-md-5 mb-4">
-
-                    <h3>Weather Dashboard - JavaScript</h3>
-                    <hr>
-                    <p>
-                        Application uses API from https://openweathermap.org/ to display current and 5 day forecast
-                        weather data.
-
-                        There are 3 API calls:
-                        <ul>
-                            <li>current weather</li>
-                            <li>UV index for city</li>
-                            <li>5 day forecast for city</li>
-                        </ul>
-                    </p>
-                    <p>
-                        How code works:<br>
-                        <ul>
-                            <li>User can search city using search box</li>
-                            <li>City will be added to quick search list below. It can be clicked to search again</li>
-                            <li>In upper panel user can see current weather conditions for given city</li>
-                            <li>in panel below forecast for next 5 days is shown</li>
-                            <li>Searched items are kept on the list during page refresh</li>
-                        </ul>
-                    </p>
-                    <p>
-                        Applications uses:
-                        <ul>
-                            <li>bootstrap for some elements</li>
-                            <li>moments.js for some date formatting</li>
-                            <li>CSS grid layout</li>
-                        </ul>
-                    </p>
-                    <p>
-                        <a href="https://github.com/KiteRunner2/JavaScript---Weather-Dashboard" target="blank"
-                            class="btn btn-teal darken-1">GitHub</a>
-                    </p>
-                </div>
-                <div class="col-md-7 mb-4">
-
-                    <div class="view overlay z-depth-1-half">
-                        <img src="./assets/img/weather_dash.png" class="card-img-top" alt="">
-                        <div class="mask rgba-white-light"></div>
-                    </div>
-
-                </div>
-                
-
-
-
-
-
-
-            </div>
-            <!--Grid row-->
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-5 mb-4">
-
-                    <h3>Quiz - JavaScript</h2>
-                        <hr>
-                        <p>Rules of the game:
-                            <ul>
-                              <li>Choose answer to the question, you have 60 sec to answer as many questions as you can</li>
-                              <li>If question is correct then you score 1 point and next question is presented</li>
-                              <li>If question is folse, your available time decreases by 5s</li>
-                              <li>Game lasts until time is finished or questions are finished</li>
-                              <li>After game you can add your nick name to hall of fame</li>
-                            </ul>
-                          </p>
-                          <p>
-                            Application consistis of 3 main modules:
-                            <ul>
-                              <li>initD - initiatlization of data -> it defines arrays of objects with questions and answers</li>
-                              <li>dataCtrl module - used for selecting questions, adding, retrieving names for hall of fame</li>
-                              <li>appCtrl module - main logic app for game; starting game, next question selection, result check, timer
-                                control</li>
-                            </ul>
-                          </p>
-                          <p>
-                            Application layout works well for desktop and mobile browser. On mobile it colapses into single column.
-                            Layout is built using bootstrap.</p>
-                          
-                        <a href="https://github.com/KiteRunner2/JavaScript---Quiz-application" target="blank"
-                            class="btn btn-teal darken-1">GitHub</a>
-
-                </div>
-                <div class="col-md-7 mb-4">
-
-                    <div class="view overlay z-depth-1-half">
-                        <img src="./assets/img/quiz.png" class="card-img-top" alt="">
-                        <div class="mask rgba-white-light"></div>
-                    </div>
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!-- grid row -->
-
+              Based on user selection, "working string" is created that is used to pick up random
+              characters from.
+              I am using function in the loop (based on password length) to pick up random characters from
+              "working string".
+              After password is generated I am doing addtitional check if password contains characters
+              required by user. If
+              it does not contain required characters then password generation is invoked again.
+              User has an option to copy password string to computer/mobile clipboard.</p>
+            <a href="https://github.com/KiteRunner2/JavaScript---password-generator" target="blank"
+              class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">GitHub Repo</a>
+            <a href="https://github.com/KiteRunner2/JavaScript---password-generator" target="blank"
+              class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">Live app</a>
 
 
         </div>
-        <!--Main container-->
+        <!--Grid column-->
+        <div class="col-md-7 mb-4">
 
-    </main>
-    <!--Main layout-->
-
-    <!-- Footer -->
-    <footer class="page-footer font-small teal darken-1 pt-4 mt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center">
-    
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none pb-3">
-    
-            <!-- Grid column -->
-            <div class="col-md-12 mb-md-0 mb-3">
-              <!-- Links -->
-              <h5 class="text-uppercase">Links</h5>
-    
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://github.com/KiteRunner2" target="blank">GitHub</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/rudzki/" target="blank">LinkedIn</a>
-                </li>
-                <li>
-                  <a href="https://stackoverflow.com/users/9341591/kiterunner" target="blank">StackOverflow</a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/kiterunner_ca" target="blank">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/kiterunner_ca/" target="blank">Instagram</a>
-                </li>
-              </ul>
-    
-            </div>
-            <!-- Grid column -->
+          <div class="view overlay z-depth-1-half">
+            <img src="./assets/img/pass_gen.png" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
           </div>
-          <!-- Grid row -->
-        </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://rudzki.ca"> Rudzki.ca</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-    <!-- Footer -->
-    <!-- Footer -->
-    <!--Footer-->
-    <!-- End your project here-->
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Your custom scripts (optional) -->
-    <script type="text/javascript">
-        function submit(){
-          let name = document.getElementById('name').value;
-          let email = document.getElementById('email').value;
-          let subject = document.getElementById('subject').value;
-          let message = document.getElementById('message').value;
-          let contact = {
-            name:name,
-            email:email,
-            subject:subject,
-            message:message
-          }
-          console.log(contact);
-          $('#alertMessage').html(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+        </div>
+
+      </div>
+      <!-- grid row -->
+      <div class="row">
+        <!-- grid column -->
+
+        <div class="col-md-5 mb-4">
+
+          <h3>Weather Dashboard - JavaScript</h3>
+          <hr>
+          <p>
+            Application uses API from https://openweathermap.org/ to display current and 5 day forecast
+            weather data.
+
+            There are 3 API calls:
+            <ul>
+              <li>current weather</li>
+              <li>UV index for city</li>
+              <li>5 day forecast for city</li>
+            </ul>
+          </p>
+          <p>
+            How code works:<br>
+            <ul>
+              <li>User can search city using search box</li>
+              <li>City will be added to quick search list below. It can be clicked to search again</li>
+              <li>In upper panel user can see current weather conditions for given city</li>
+              <li>in panel below forecast for next 5 days is shown</li>
+              <li>Searched items are kept on the list during page refresh</li>
+            </ul>
+          </p>
+          <p>
+            Applications uses:
+            <ul>
+              <li>bootstrap for some elements</li>
+              <li>moments.js for some date formatting</li>
+              <li>CSS grid layout</li>
+            </ul>
+          </p>
+          <p>
+            <a href="https://github.com/KiteRunner2/JavaScript---Weather-Dashboard" target="blank"
+              class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">GitHub Repo</a>
+            <a href="https://kiterunner2.github.io/JavaScript---Weather-Dashboard/" target="blank"
+              class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">Live app</a>
+          </p>
+        </div>
+        <div class="col-md-7 mb-4">
+
+          <div class="view overlay z-depth-1-half">
+            <img src="./assets/img/weather_dash.png" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+          <h3>Quiz - JavaScript</h3>
+          <hr>
+          <p>Rules of the game:
+            <ul>
+              <li>Choose answer to the question, you have 60 sec to answer as many questions as you can</li>
+              <li>If question is correct then you score 1 point and next question is presented</li>
+              <li>If question is folse, your available time decreases by 5s</li>
+              <li>Game lasts until time is finished or questions are finished</li>
+              <li>After game you can add your nick name to hall of fame</li>
+            </ul>
+          </p>
+          <p>
+            Application consistis of 3 main modules:
+            <ul>
+              <li>initD - initiatlization of data -> it defines arrays of objects with questions and answers</li>
+              <li>dataCtrl module - used for selecting questions, adding, retrieving names for hall of fame</li>
+              <li>appCtrl module - main logic app for game; starting game, next question selection, result check,
+                timer
+                control</li>
+            </ul>
+          </p>
+          <p>
+            Application layout works well for desktop and mobile browser. On mobile it colapses into single column.
+            Layout is built using bootstrap.</p>
+
+          <a href="https://github.com/KiteRunner2/JavaScript---Quiz-application" target="blank"
+            class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">GitHub Repo</a>
+          <a href="https://kiterunner2.github.io/JavaScript---Quiz-application/" target="blank"
+            class="btn btn-teal darken-1" style="box-shadow: 3px 3px 8px teal">Live app</a>
+
+        </div>
+        <div class="col-md-7 mb-4">
+
+          <div class="view overlay z-depth-1-half">
+            <img src="./assets/img/quiz.png" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!-- grid row -->
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+          <h3>Hatter - chatting application</h3>
+          <h3>JavaScript,Node.js,Express,MySQL</h3>
+          <hr>
+          <p>Features:
+            <ul>
+              <li>User profile</li>
+              <li>Post new message</li>
+              <li>Comment on existing message</li>
+              <li>Delete your messeges</li>
+              <li>Follow other users</li>
+            </ul>
+          </p>
+          <p>
+            Technologies:
+            <ul>
+              <li>Node.js, express to serve web pages and handle API calls between front-end/back-end</li>
+              <li>MySQL database with relations between tables to store user profile, posts, likes, etc.</li>
+              <li>Using bcrypt module to hash user password</li>
+              <li>Bootstrap for responsive design, jQuery for handling front-end logic</li>
+            </ul>
+          </p>
+          <p>
+            Application layout works well for desktop and mobile browser. On mobile it colapses into single column.
+            Layout is built using bootstrap.</p>
+
+          <a href="https://github.com/KiteRunner2/hatter" style="box-shadow: 3px 3px 8px teal" target="blank"
+            class="btn btn-teal darken-1">GitHub Repo</a>
+          <a href="http://hatter.herokuapp.com/" style="box-shadow: 3px 3px 8px teal" target="blank"
+            class="btn btn-teal darken-1">Live app</a>
+
+        </div>
+        <div class="col-md-7 mb-4">
+
+          <div class="view overlay z-depth-1-half">
+            <img src="./assets/img/hatt.png" class="card-img-top" alt="">
+            <div class="mask rgba-white-light"></div>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!-- grid row -->
+
+
+
+    </div>
+    <!--Main container-->
+
+  </main>
+  <!--Main layout-->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small teal darken-1 pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center">
+
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-12 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://github.com/KiteRunner2" target="blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rudzki/" target="blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/9341591/kiterunner" target="blank">StackOverflow</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/kiterunner_ca" target="blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kiterunner_ca/" target="blank">Instagram</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://rudzki.ca"> Rudzki.ca</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- Footer -->
+  <!--Footer-->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    function submit() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let subject = document.getElementById('subject').value;
+      let message = document.getElementById('message').value;
+      let postData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      }
+      // console.log(postData);
+      $.post('/wyslijmail.php', postData).then(response => {
+
+        $('#name').val('');
+        $('#email').val('');
+        $('#subject').val('');
+        $('#message').val('');
+        if (response == 'ok') {
+          $('#alertMessage').html(`<div id="x1" class="alert alert-success alert-dismissible fade show" role="alert">
       Thank you! Your messsage has been sent!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
     </div>`);
-        };
-      
-      
-      </script>
+          setTimeout(function () {
+            $('#x1').fadeOut(1000);
+          }, 2500);
+          return true;
+        }
+        else {
+          $('#alertMessage').html(`<div id="x1" class="alert alert-danger alert-dismissible fade show" role="alert">
+      There was a problem sending your message. Please try again later.<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+    </div>`);
+          setTimeout(function () {
+            $('#x1').fadeOut(1000);
+          }, 2500);
+          return true;
+        }
+      });
+
+    };
+
+
+  </script>
 
 </body>
 
