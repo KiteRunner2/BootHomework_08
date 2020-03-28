@@ -4,7 +4,7 @@
 New refreshed portfolio page that consists of:
 1. Main page
 2. Portfolio page
-3. Contact page
+3. Contact page - i will receive email if someone contacts me
 ```
 ```
 Used technique:
@@ -12,8 +12,5 @@ Used technique:
 ```
 
 ```
-TO-DO for later:
-1. set up webpage on server and make contact form work - sending email
-2. create blog page
-3. add resume page
+
  
