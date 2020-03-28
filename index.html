@@ -22,98 +22,68 @@
 <body>
   <div id="alertMessage"></div>
   <!-- Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+  <div class="container">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered container" role="document">
+        <div class="modal-content">
 
-        <!-- <div class="container my-5"> -->
+          <!--Section: Content-->
+          <section class="text-center dark-grey-text mb-5">
+            <div style="padding:1rem;">
+              <!-- <div class="card"> -->
+              <!-- <div class="card-body"> -->
 
-        <!-- <style>
-        .border-top {
-          border-top: 5px solid #218c74 !important;
-          border-top-left-radius: .25rem!important;
-            border-top-right-radius: .25rem!important;
-        }
-      </style> -->
+              <!-- Section heading -->
+              <h3 class="font-weight-bold my-4">Contact me</h3>
 
+              <div class="row">
+                <div class="col-md-6 mb-4">
 
-        <!--Section: Content-->
-        <section class="text-center dark-grey-text mb-5">
-          <div style="padding:1rem;">
-            <!-- <div class="card"> -->
-            <!-- <div class="card-body"> -->
+                  <!-- Name -->
+                  <input type="text" id="name" class="form-control" placeholder="Name">
 
-            <!-- Section heading -->
-            <h3 class="font-weight-bold my-4">Contact me</h3>
-            <!-- Section description -->
-
-
-            <!-- <form class="mb-4 mx-md-5" action="" onsubmit=""> -->
-
-            <div class="row">
-              <div class="col-md-6 mb-4">
-
-                <!-- Name -->
-                <input type="text" id="name" class="form-control" placeholder="Name">
-
-              </div>
-              <div class="col-md-6 mb-4">
-
-                <!-- Email -->
-                <input type="email" id="email" class="form-control" placeholder="Email">
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 mb-4">
-
-                <!-- Subject -->
-                <input type="text" id="subject" class="form-control" placeholder="Subject">
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-
-                <div class="form-group mb-4">
-                  <textarea class="form-control rounded" id="message" rows="3" placeholder="How can I help?"></textarea>
                 </div>
+                <div class="col-md-6 mb-4">
 
-                <div class="text-center">
-                  <button type="submit" onclick="submit();$('#contactModal').modal('hide')"
-                    class="btn btn-info btn-md btn-teal darken-1">Submit</button>
+                  <!-- Email -->
+                  <input type="email" id="email" class="form-control" placeholder="Email">
+
                 </div>
-
               </div>
+
+              <div class="row">
+                <div class="col-md-12 mb-4">
+
+                  <!-- Subject -->
+                  <input type="text" id="subject" class="form-control" placeholder="Subject">
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="form-group mb-4">
+                    <textarea class="form-control rounded" id="message" rows="3"
+                      placeholder="How can I help?"></textarea>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" onclick="submit();$('#contactModal').modal('hide')"
+                      class="btn btn-info btn-md btn-teal darken-1">Submit</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- </form> -->
+
+              <!-- </div> -->
+              <!-- </div> -->
             </div>
-
-            <!-- </form> -->
-
-            <!-- </div> -->
-            <!-- </div> -->
-          </div>
-        </section>
-        <!-- Section: Content -->
-
-        <!-- </div> -->
-
-
-        <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+          </section>
+        </div>
       </div>
     </div>
   </div>
